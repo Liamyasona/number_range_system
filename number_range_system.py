@@ -31,10 +31,13 @@ def number_inputs():
         except ValueError:
             print("Invalid integer! Please print a valid integer.")
     
-
-
-
-# Ask the user to input again
 # If user input is invalid, print the inputted numbers in their following ranges
+print("Here are the inputted numbers on every range:")
+print(f"Numbers 1-10: {ranges[0]}")
+print(f"Numbers 11-20: {ranges[1]}")
+print(f"Numbers 21-30: {ranges[2]}")
+print(f"Numbers 31-40: {ranges[3]}")
+print(f"Numbers 41-50: {ranges[4]}")
 
+# Execute the function
 number_inputs()

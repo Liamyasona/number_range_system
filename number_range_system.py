@@ -1,14 +1,17 @@
 # Define the ranges
 def number_inputs():
-    
+    # Make a list on each range to store the inputted numbers   
+    ranges = [0 for i in range(5)]
 
-print("Welcome to the system!")
 # Ask user to input numbers ranging from 1 to 50
-while True:
-    number = int(input("Please input a number ranging from 1 to 50: "))
+    while True:
+        number_input = int(input("Please input a number ranging from 1 to 50: "))
 
-    if 50 > number < 0:
-        print("Invalid number! Displaying previous numbers.")
+        if 1 <= number_input <= 50:
+            
+        elif:
+            print("Invalid number! Displaying previous numbers.")
+            break
 
 
 # Ask the user to input again

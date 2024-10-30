@@ -1,7 +1,7 @@
 # Define the ranges
 def number_inputs():
     # Make a list on each range to store the inputted numbers   
-    ranges = [0, 0, 0, 0, 0]
+    ranges = [0, 0, 0, 0, 0] 
 
 
     # Loop to keep asking the user to input a number
@@ -14,7 +14,7 @@ def number_inputs():
             if 1 <= number_input <= 50:
               
                 if number_input >= 1 and number_input <= 10:
-                    ranges[0] += 1 #
+                    ranges[0] += 1 
                 elif number_input >= 11 and number_input <= 20:
                     ranges[1] += 1 
                 elif number_input >= 21 and number_input <= 30:
@@ -31,13 +31,14 @@ def number_inputs():
         except ValueError:
             print("Invalid integer! Please print a valid integer.")
     
-# If user input is invalid, print the inputted numbers in their following ranges
-print("Here are the inputted numbers on every range:")
-print(f"Numbers 1-10: {ranges[0]}")
-print(f"Numbers 11-20: {ranges[1]}")
-print(f"Numbers 21-30: {ranges[2]}")
-print(f"Numbers 31-40: {ranges[3]}")
-print(f"Numbers 41-50: {ranges[4]}")
+    # If user input is invalid, the loop and the inputted numbers will be printed in their following ranges
+    print("")
+    print("Here are the inputted numbers on every range:")
+    print(f"Numbers 1-10: {ranges[0]}")
+    print(f"Numbers 11-20: {ranges[1]}")
+    print(f"Numbers 21-30: {ranges[2]}")
+    print(f"Numbers 31-40: {ranges[3]}")
+    print(f"Numbers 41-50: {ranges[4]}")
 
 # Execute the function
 number_inputs()

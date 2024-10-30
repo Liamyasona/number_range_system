@@ -3,15 +3,24 @@ def number_inputs():
     # Make a list on each range to store the inputted numbers   
     ranges = [0 for i in range(5)]
 
-# Loop to keep asking the user to input a number
+    # Loop to keep asking the user to input a number
     while True:
         try:
             # Ask user to input numbers ranging from 1 to 50
             number_input = int(input("Please input a number ranging from 1 to 50: "))
 
             # Conditions on what are considered valid for the user to input
-            if 1 <= number_input <= 50:
-                
+            if 1 <= number_input <= 50:        
+                if number_input > 1 and number_input < 10:
+                    ranges[0] += 1 
+                elif number_input > 11 and number_input < 20:
+                    ranges[0] += 1 
+                elif number_input > 21 and number_input < 30:
+                    ranges[0] += 1 
+                elif number_input > 31 and number_input < 40:
+                    ranges[0] += 1 
+                elif number_input > 41 and number_input < 50:
+                    ranges[0] += 1 
             else:
                 print("Invalid number! Displaying previous numbers.")
                 break # When user inputs a invalid number, the loop breaks and prints the numbers

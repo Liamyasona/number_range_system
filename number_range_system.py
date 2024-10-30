@@ -1,7 +1,6 @@
 def number_inputs():
     # Make a list on each range to store the inputted numbers   
-    ranges = [0, 0, 0, 0, 0] 
-
+    ranges = [0, 0, 0, 0, 0]
 
     # Loop to keep asking the user to input a number
     while True:

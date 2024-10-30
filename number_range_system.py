@@ -1,4 +1,3 @@
-# Define the ranges
 def number_inputs():
     # Make a list on each range to store the inputted numbers   
     ranges = [0, 0, 0, 0, 0] 
@@ -12,7 +11,7 @@ def number_inputs():
 
             # Conditions on what are considered valid for the user to input
             if 1 <= number_input <= 50:
-              
+                # If & elif statements to group the inputted valid numbers within 1 to 50
                 if number_input >= 1 and number_input <= 10:
                     ranges[0] += 1 
                 elif number_input >= 11 and number_input <= 20:
